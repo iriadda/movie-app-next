@@ -1,0 +1,19 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0 ;
+}
+.pagination-link{
+    background-color: #01b4e4;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+.pagination-link.disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    pointer-events: none; /* щоб не було кліка */
+}

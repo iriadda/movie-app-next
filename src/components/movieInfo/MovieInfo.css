@@ -1,0 +1,100 @@
+.wrapper{
+    width: 100vh;
+}
+.blur {
+    position: absolute;
+    top: 0;
+    left: 220px;
+    width: calc(100vw - 220px);
+
+    min-height: 690px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding-left:  80px;
+    color: white;
+    box-sizing: border-box;
+    isolation: isolate;
+    overflow-x: hidden;
+}
+
+.blur::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.85) 15%,
+            rgba(0, 0, 0, 0.6) 25%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.1) 100%
+    );
+}
+.blur::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px; /* висота затемнення */
+    z-index: -1;
+    background: linear-gradient(to top,
+    #222731 0%,     /* твій основний фон сайту */
+    rgba(26, 26, 26, 0.9) 30%,
+    rgba(26, 26, 26, 0.6) 60%,
+    rgba(26, 26, 26, 0.3) 85%,
+    transparent 100%
+    );
+}
+
+
+
+.blur>h1{
+    font-size: 3.5rem;
+    margin-top: 360px;
+}
+
+.movie-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+
+}
+
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+.official-site-button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #01b4e4;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.official-site-button:hover {
+    background-color: #039bc6;
+}
+
+.movie-overview {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+

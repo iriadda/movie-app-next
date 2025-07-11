@@ -1,0 +1,20 @@
+
+.navBar {
+    max-width: 220px;
+    height: 100vh;
+    background-color: #15161c;
+    color: white;
+    padding: 24px  0 0 24px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+.logo-link{
+    padding-bottom: 24px;
+    /*border-bottom: 1px solid #01b4e4;*/
+}
