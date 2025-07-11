@@ -11,6 +11,7 @@ const PosterPreview: FC<posterProps> = ({poster_path, title}) => {
 
     return (
         <div className={'poster-wrapper'}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={poster_path ? `${imgUrl}${poster_path}` : placeholder} alt={title} className={'poster'}/>
 
         </div>
